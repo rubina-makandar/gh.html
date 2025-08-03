@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample Form</title>
+</head>
+<body>
+  <h2>Feedback Form</h2>
+
+  <form action="/submit" method="POST">
+
+    <!-- Text input field -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <!-- Textarea for longer responses -->
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+    <br><br>
+
+    <!-- Multiple-choice / Radio buttons -->
+    <p>What is your preferred contact method?</p>
+    <input type="radio" id="email" name="contact" value="email">
+    <label for="email">Email</label><br>
+    <input type="radio" id="phone" name="contact" value="phone">
+    <label for="phone">Phone</label><br>
+    <input type="radio" id="none" name="contact" value="none">
+    <label for="none">No Preference</label>
+    <br><br>
+
+    <!-- Checkboxes -->
+    <p>Which platforms do you use? (Select all that apply)</p>
+    <input type="checkbox" id="windows" name="platforms" value="Windows">
